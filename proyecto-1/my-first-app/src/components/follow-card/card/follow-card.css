@@ -1,0 +1,26 @@
+.follow-card {
+	display: flex;
+	justify-content: space-between;
+	transition: background-color .3s ease-in-out;
+	padding: .5rem;
+	align-items: center;
+	width: 100%;
+	& .follow-card-info {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		flex: 1;
+		& .info {
+			display: flex;
+			flex-flow: column wrap;
+			gap: 4px;
+		}
+	}
+	& .username{
+		font-weight: bold;
+	}
+	
+}
+.follow-card:hover{
+	background-color: rgb(62, 65, 68);
+}

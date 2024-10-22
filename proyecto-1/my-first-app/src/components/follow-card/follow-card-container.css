@@ -1,0 +1,15 @@
+.follow-container{
+    width: 350px;
+    height: 245px;
+    border: 1px solid #eee;
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+   
+    & .title{
+        font-weight: bold;
+        padding: 1rem;
+    }
+
+}
