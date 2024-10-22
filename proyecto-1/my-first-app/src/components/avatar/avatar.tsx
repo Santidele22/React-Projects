@@ -1,5 +1,5 @@
+import { imgSizes } from "../../models/enums/img.enum";
 import "./avatar.css";
-import { imgSizes } from "./img.enum";
 
 interface avatarProps {
 	img: string;

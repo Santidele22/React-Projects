@@ -1,20 +1,22 @@
-import { Avatar } from "../../avatar/avatar";
-import { imgSizes } from "../../avatar/img.enum";
-import { Button } from "../../button/button";
 import "./follow-card.css";
-export function FollowCard() {
-	function example() {}
+//Components
+import { Avatar } from "../../avatar/avatar";
+import { Button } from "../../button/button";
+//Interface
+import { User } from "../../../models/user.models";
+
+
+export function FollowCard(user: User, handleClickClick) {
 	return (
 		<article className="follow-card">
-			<Avatar key={1} img="a" alt="a" imgSize={imgSizes.MEDIUM} />
+			<Avatar key={user.id.value} img={user.picture} alt={user.name.title} imgSize={user.picture} />
 			<div className="follow-card-info">
 				<div className="info">
-					<span className="username">Nombre</span>
-					<span>@username</span>
+					<span className="username">{user.name.first}</span>
+					<span>@{user.login.username}</span>
 				</div>
-				<Button key={1} handleClick={example} text="Follow" />
+				<Button key={1} handleClick={handleClickClick} text="Follow" />
 			</div>
-            
 		</article>
 	);
 }
