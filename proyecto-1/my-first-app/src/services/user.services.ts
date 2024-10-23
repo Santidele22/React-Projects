@@ -9,6 +9,7 @@ export async function userData():Promise<User[]>{
         if(!users){
             throw new Error("No se encuentra ningun usuario")
         }
+        console.log(users.results)
         return users.results
     } catch (error) {
         if (error instanceof Error) {

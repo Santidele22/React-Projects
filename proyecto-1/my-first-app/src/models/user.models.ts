@@ -22,4 +22,5 @@ export interface User {
 	login: Login;
 	id: UserId;
 	picture: Picture;
+	isFollowing:boolean
 }
