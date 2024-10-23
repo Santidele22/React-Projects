@@ -1,0 +1,33 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    },
+    "plugins": ["react", "@typescript-eslint"],
+    "rules": {
+      "quotes": ["error", "single"], // Forzar comillas simples
+      "indent": ["error", "tab"], // Forzar uso de tabs para indentación
+  "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true, // Comillas simples para Prettier
+          "useTabs": true // Uso de tabs para Prettier
+        }
+      ]
+    }
+  }
+  

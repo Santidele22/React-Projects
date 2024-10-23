@@ -1,26 +1,10 @@
 img {
 	width: 100%;
 	height: auto;
+	border-radius: 50%;
+	object-fit: cover;
 }
 picture {
 	border: 1px solid #fff;
 	border-radius: 50%;
-}
-.medium {
-	width: 40px;
-	height: 40px;
-}
-
-.large {
-	border: 1px solid #fff;
-	border-radius: 50%;
-	width: 60px;
-	height: 60px;
-}
-
-.thumbnail {
-	border: 1px solid #fff;
-	border-radius: 50%;
-	width: 20px;
-	height: 20px;
 }
