@@ -29,8 +29,8 @@ export default function Game() {
 		setBoard(Array(9).fill(null));
 		setWinner(null);
 		setMoves(Turns.X);
-		window.localStorage.remove("turn");
-		window.localStorage.remove("board");
+		window.localStorage.removeItem("turn");
+		window.localStorage.removeItem("board");
 	}
 
 	function updateBoard(index: number) {
