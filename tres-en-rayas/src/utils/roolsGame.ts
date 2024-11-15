@@ -26,3 +26,6 @@ export const checkerWin = (board:Turns[]) => {
     }
     return false
 }
+export function isDraw (board:Turns[]){
+    return board.every(square => square !== null)
+}

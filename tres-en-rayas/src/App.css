@@ -11,8 +11,14 @@
   color: #fff;
 
 }  
+h1{
+  color: white;
 
+}
 .turns{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
   text-align: center;
   font-size: 2rem;
   color: white;
@@ -25,10 +31,10 @@ span{
   border-radius: 4px;
 }
 .XisSelected{
-  background-color: #0f6;
+  background-color: #d20d0d;
 }
 .OisSelected{
-  background-color: #06a;
+  background-color: rgb(4, 70, 115);
 
 }
 .reset{
@@ -37,11 +43,25 @@ span{
   justify-content: center;
   margin: 20px 0;
   & button{
-    
     width: max-content;
     transition:  background-color .5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   & button:hover{
     background-color : #06a;
+  }
+}
+.modal{
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border: 3px solid;
+  border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ccc;
+  text-align: center;
+  & button {
+    width: 80%;
   }
 }
