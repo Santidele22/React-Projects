@@ -14,7 +14,6 @@ export function useMovies(search:string){
         previusSearch.current = search
         const newMovies =  await getMoviesServices(search)
         setResponseMovies(newMovies)
-        console.log("newmovies" , newMovies)
     } catch (error) {
         console.error("Movies not found" , error)
     }
