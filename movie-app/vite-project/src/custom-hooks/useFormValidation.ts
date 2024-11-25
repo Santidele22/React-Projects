@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Errors, validateMovieSearch } from "../validations/form-validation";
 
-export function useFormValid(query:string){
+export function useFormValid(){
 	const [error, setError] = useState<Errors>({
 		empty:'',
 		maxLength:'',
@@ -10,6 +10,7 @@ export function useFormValid(query:string){
 		specialCharacters:'',
 		sqlInjection:''
 	});
+	const [query, setQuery] = useState('')
 	const isFirstInput = useRef(true)
 
 	useEffect(() => {
@@ -22,9 +23,9 @@ export function useFormValid(query:string){
 			setError(validation);
 			return
 		}
-		return
+		return 
 
 	}, [query]);
 
-	return error
+	return {setQuery,query,error}
 }
