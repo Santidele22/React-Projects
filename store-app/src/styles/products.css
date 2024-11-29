@@ -31,3 +31,11 @@
 	gap: 8px;
 	align-items: center;
 }
+.products button {
+	background-color: #0f9;
+	padding: 1rem;
+	border-radius: 8px;
+}
+.isProductInCart {
+	background-color: red;
+}

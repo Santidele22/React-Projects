@@ -15,20 +15,15 @@
 }
 
 #root {
-	max-width: 600px;
 	margin: 0 auto;
 	padding: 2rem;
 	text-align: center;
-	width: 100%;
 }
 
 body {
 	margin: 0;
 	display: flex;
 	place-items: center;
-
-	min-width: 320px;
-	min-height: 100vh;
 }
 
 button {
@@ -60,6 +55,8 @@ ul {
 	align-items: center;
 	gap: 1rem;
 	justify-content: center;
+	max-width: 600px;
+	margin: 0 auto;
 }
 .header-title {
 	display: flex;
