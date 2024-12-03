@@ -4,13 +4,13 @@ interface Props extends TaskModel {
 	setCompleted: (id: string, Status: boolean) => void;
 	removeTodo: ({ id }: TaskID) => void;
 }
-export function Task({ id, Name, Status, removeTodo, setCompleted }: Props) {
+export function Task({ id, Name, completed, removeTodo, setCompleted }: Props) {
 	return (
 		<>
 			<div className="view">
 				<input
 					className="toggle"
-					checked={Status}
+					checked={completed}
 					type="checkbox"
 					onChange={(e) => {
 						setCompleted(id, e.target.checked);

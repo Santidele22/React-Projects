@@ -4,17 +4,17 @@ export const task: Task[] = [
 	{
 		id: "1",
 		Name: "task 1",
-		Status: true,
+		completed: true,
 	},
 
 	{
 		id: "2",
 		Name: "task 2",
-		Status: false,
+		completed: false,
 	},
 	{
 		id: "3",
 		Name: "task 3",
-		Status: false,
+		completed: false,
 	},
 ];
